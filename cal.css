@@ -1,0 +1,135 @@
+body{
+  background-color: #f0f0f5;
+
+}
+
+.Container1{
+  display: grid;
+  top: 50px;
+  margin: 0 auto;
+  transform: translateY(20%);
+  border-radius: 15px;
+  background-color: #c2c2d6;
+  grid-template-columns: repeat(4,2fr);
+  grid-template-rows: repeat(6,2fr);
+  row-gap: 20px;
+  column-gap: 15px;
+  height: 430px;
+  width:  320px;
+  border: 4px double black;
+  padding: 25px;
+  grid-template-areas:
+  "display display display display"
+  "clear clear delete delete"
+  "seven eight nine divide"
+  "four five six multiply"
+  "one two three minus"
+  "dot zero equal plus"
+}
+
+button{
+  outline: none;
+}
+
+.numbers{
+  position: relative;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.operators{
+  position: relative;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.display{
+  background-color: #ccccff;
+  grid-area: display;
+  min-height: 45px;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: right;
+
+}
+
+.Clear{
+  grid-area: clear
+}
+
+.operators.Delete{
+  grid-area: delete;
+}
+
+.numbers.Seven{
+  grid-area: seven;
+}
+
+.numbers.Eight{
+  grid-area: eight;
+}
+
+.numbers.Nine{
+  grid-area: nine;
+}
+
+.operators.Divide{
+  grid-area: divide;
+}
+
+.numbers.Four{
+  grid-area: four;
+}
+
+.numbers.Five{
+  grid-area: five;
+}
+
+.numbers.Six{
+  grid-area: six;
+}
+
+.numbers.Three{
+  grid-area: three;
+}
+
+.numbers.Two{
+  grid-area: two;
+}
+
+.numbers.One{
+  grid-area: one;
+}
+
+.numbers.Six{
+  grid-area: six;
+}
+
+.numbers.Zero{
+  grid-area: zero;
+}
+
+
+.operators.Multiply{
+  grid-area: multiply;
+}
+
+.operators.Minus{
+  grid-area: minus;
+}
+
+.operators.Dot{
+  grid-area: dot;
+}
+
+.operators.Equal{
+  grid-area: equal;
+}
+
+.operators.Plus{
+  grid-area: plus;
+}
